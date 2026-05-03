@@ -7,7 +7,7 @@ const MapBook = ({data}) => {
   return (
     <div>
         {booksArray.map((book,idx) => (
-          <div key={idx || book.id} style={{ border: '1px solid #ccc', margin: '10px', padding: '10px' }}>
+          <div key={book.id ? `${book.id}-${idx}` : idx} style={{ border: '1px solid #ccc', margin: '10px', padding: '10px' }}>
             <h3>{book.volumeInfo.title}</h3>
             <p>{book.volumeInfo.description}</p>
           </div>
