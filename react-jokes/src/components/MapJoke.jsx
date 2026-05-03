@@ -11,7 +11,7 @@ const MapJoke = ({ data }) => {
       {jokesArray.map((joke,idx) => (
         <div key={joke.id || idx} style={{ border: '1px solid #ccc', margin: '10px', padding: '10px' }}>
           <p>{joke.content}</p>
-          <small>Category: {joke.categories?.join(', ') || 'General'}</small>
+          <small>Category: {joke.categories?.join(', ') || 'Random'}</small>
         </div>
       ))}
     </div>
