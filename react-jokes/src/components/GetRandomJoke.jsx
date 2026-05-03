@@ -16,7 +16,7 @@ const GetRandomJoke = () => {
 //   }
   const result = await response.json();
  if (result && result.data) {
-  console.log(result.data.content);
+//   console.log(result.data.content);
   setData([result.data]);
 }
   
