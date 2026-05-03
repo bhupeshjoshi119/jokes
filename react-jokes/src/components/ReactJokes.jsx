@@ -22,7 +22,7 @@ try {
 }
   }
   jokes()
-  })
+  },[])
     
   return (
     <div>
